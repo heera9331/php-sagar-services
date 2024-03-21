@@ -19,9 +19,9 @@ session_start();
       include ("../components/header.php");
     ?>
     
-    <main class="min-h-[100vh] mt-[70px]">
+    <main class="min-h-[70vh] mt-[70px]">
         <div class="flex items-center justify-center">
-            <form action="#" method="post" class="p-4 flex flex-col w-[400px] h-[280px] border border-black border-opacity-25 mt-[100px] rounded-sm">
+            <form action="#" method="post" class="p-4 flex flex-col w-[400px] h-[280px] border border-black border-opacity-25 mt-[70px] rounded-sm">
                 <div class="flex flex-col gap-2 m-1 p-1">
                     <label htmlFor="username">
                         Username
@@ -46,7 +46,7 @@ session_start();
                     />
                 </div>
 
-                <div class="flex flex-col gap-2 m-2 p-1 border border-black border-opacity-25 bg-gray-200">
+                <div class="flex flex-col gap-2 m-2 p-1 border border-black border-opacity-25 bg-gray-200 hover:bg-gray-300">
                     <button type="submit" name="submit" class="rounded-sm">
                         Login
                     </button>

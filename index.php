@@ -45,41 +45,41 @@ $totalPages = ceil($totalServices / $pageSize);
             <div class="flex flex-col">
                 <form action="./" method="get">
                     <div class="flex flex-col">
-                        <div class="flex flex-col gap-2 m-1 p-1">
+                        <div class="flex flex-col gap-2 py-2">
                             <label for="query">Search</label>
                             <input type="search" name="query" placeholder="Search here..."
                             class="py-1 px-4 rounded-sm text-black border border-black border-opacity-25 focus:outline-none focus:border-b-1" />
                         </div>
                         <h3 class="font-semibold">Filters</h3>
-                        <div class="flex flex-col gap-2 m-1 p-1">
-                        <label htmlFor="district">
-                            District
-                        </label>
-                        <select name="district" id="district">
-                            <option value="">select</option>
-                        <?php 
-                            foreach($districts as $district) {
-                                echo '<option value="'.$district['district'].'" >'.$district['district'].'</option>';
-                            }
-                        ?>
-                        </select>
-                    </div>
-                        <div class="flex flex-col gap-2 m-1 p-1">
-                        <label htmlFor="category">
-                            Category
-                        </label>
-                        <select name="category" id="category">
-                            <option value="">select</option>
-                        <?php 
-                            foreach($categories as $category) {
-                                echo '<option value="'.$category['id'].'" >'.$category['name'].'</option>';
-                            }
-                        ?>
-                        </select>
-                    </div>
+                        <div class="flex flex-col gap-2 py-2">
+                            <label htmlFor="district">
+                                District
+                            </label>
+                            <select name="district" id="district" class="border-2 border-gray-200 rounded-sm py-1 px-2">
+                                <option value="">select</option>
+                                <?php 
+                                    foreach($districts as $district) {
+                                        echo '<option value="'.$district['district'].'" >'.$district['district'].'</option>';
+                                    }
+                                ?>
+                            </select>
+                        </div>
+                        <div class="flex flex-col gap-2 py-2">
+                            <label htmlFor="category">
+                                Category
+                            </label>
+                            <select name="category" id="category" class="border-2 border-gray-200 rounded-sm py-1 px-2">
+                                <option value="">select</option>
+                            <?php 
+                                foreach($categories as $category) {
+                                    echo '<option value="'.$category['id'].'" >'.$category['name'].'</option>';
+                                }
+                            ?>
+                            </select>
+                        </div>
                         <div class="flex px-2 items-center justify-center">
-                            <button type="submit" name="search" class="bg-gray-200 px-2 py-1 rounded-sm font-semibold border">
-                                Apply
+                            <button type="submit" name="search" class="bg-gray-200 px-2 py-1 rounded-sm font-semibold border-2 hover:bg-gray-300">
+                                Search
                             </button>
                         </div>
                     </div>

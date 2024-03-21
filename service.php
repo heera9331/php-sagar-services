@@ -191,6 +191,7 @@ $reviews = dbQueryResult($sql);
                                 echo '
                                 <script>
                                     alert("submitted");
+                                    window.location.href = window.location.href
                                 </script>
                                 ';
                             } else {

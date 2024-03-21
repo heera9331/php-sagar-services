@@ -15,7 +15,7 @@ include ("./components/service.php");
 <body class="">
 <?php include ("./components/header.php"); ?>
     
-<main class="min-h-[100vh] mt-[70px]">
+<main class="min-h-[75vh] mt-[70px]">
     <div class="flex flex-wrap">
             <ul class="p-2 flex flex-col">
                 <h2 class="font-semibold">Admin Area</h2>
