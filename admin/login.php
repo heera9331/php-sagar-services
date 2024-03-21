@@ -64,6 +64,7 @@ session_start();
                         $res = dbQueryResult($sql);
                         if(isset($res[0])) {
                             $_SESSION['username'] = $res[0]['username'];
+                            $_SESSION['isAdmin'] = $res[0]['isAdmin'];
                             
                             echo "<script type='text/javascript'>";
                                 echo "document.location.href='/sagar-services/admin'";
