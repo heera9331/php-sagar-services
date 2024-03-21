@@ -30,6 +30,9 @@ $reviews = dbQueryResult($sql);
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <?php include("./headerLinks.php"); ?>
     <title>Sagar Services</title>
+    <meta <?php echo 'title="' . $service["title"] . '"'; ?> description="<?php echo $service['description']; ?>">
+
+    
     <style>
         .hidden {
             display: none;
@@ -42,7 +45,7 @@ $reviews = dbQueryResult($sql);
     <main class="min-h-[100vh] mt-[70px]">
         <div class="flex min-h-[90vh] justify-center"> 
             <!-- main display service -->
-            <div class="px-4 lg:flex flex-col justify-center w-[100%]">
+            <div class="px-4 lg:flex flex-col">
                 <aside class="min-w-[250px] border border-black border-opacity-25 my-2 p-2 rounded-sm">
                     <h2>Sponsored Service</h2>
                 </aside>
