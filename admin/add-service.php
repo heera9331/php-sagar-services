@@ -28,7 +28,7 @@ $providers = dbQueryResult("SELECT id,name FROM providers;");
     <main class="min-h-[100vh] mt-[70px]">
         <div class="flex items-center justify-center">
             <form action="#" method="post" class="p-4 flex flex-col w-[400px] h-[700px] border border-black border-opacity-25 mt-[20px] rounded-sm">
-                <h1 class="text-2xl font-semibold text-gray-600">Add A New Service Provider</h1>    
+                <h1 class="text-2xl font-semibold text-gray-600">Add A New Service</h1>    
                 <div class="flex flex-col gap-2 m-1 p-1">
                     <label htmlFor="name">
                         Name

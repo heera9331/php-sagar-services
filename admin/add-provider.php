@@ -60,11 +60,12 @@ include ("../protect.php");
                         $name = $_POST['name'];
                         $mobile = $_POST['mobile'];
                         
-                        echo $sql = "INSERT INTO providers (name, mobile) values('$name', '$mobile');";
+                        $sql = "INSERT INTO providers (name, mobile) values('$name', '$mobile');";
                         dbQuery($sql);
                         echo '
                         <script>
                             alert("success");
+                            window.location.href = window.location.href
                         </script>
                         ';
                     }

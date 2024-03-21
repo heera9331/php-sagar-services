@@ -21,7 +21,7 @@ session_start();
     
     <main class="min-h-[70vh] mt-[70px]">
         <div class="flex items-center justify-center">
-            <form action="#" method="post" class="p-4 flex flex-col w-[400px] h-[280px] border border-black border-opacity-25 mt-[70px] rounded-sm">
+            <form action="#" method="post" class="p-4 flex flex-col w-[400px] h-[280px] border border-black border-opacity-25 mt-[70px] rounded-sm shadow-md border-black border-2">
                 <div class="flex flex-col gap-2 m-1 p-1">
                     <label htmlFor="username">
                         Username
@@ -60,7 +60,7 @@ session_start();
                         $username = $_POST['username'];
                         $password = $_POST['password'];
 
-                        $sql = "SELECT username FROM users where username='$username' and password='$password' limit 1;";
+                        $sql = "SELECT username, isAdmin FROM users where username='$username' and password='$password' limit 1;";
                         $res = dbQueryResult($sql);
                         if(isset($res[0])) {
                             $_SESSION['username'] = $res[0]['username'];
